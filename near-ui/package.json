@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start -p 37218",
     "lint": "next lint",
+    "prod": "next build && next export",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
     "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
   },

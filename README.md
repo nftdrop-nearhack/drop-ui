@@ -1,6 +1,5 @@
-# MetaDrops
+# Metadrops
 <img src="https://github.com/nftdrop-nearhack/drop-ui/blob/b0faeee2017546b4754cba978a74f630b0fa9986/logo.png" width="80px">
-![ Meta Drops](logo.png)
 
 > This work fork from our Team private project [gitlab repository]
 
