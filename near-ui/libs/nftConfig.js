@@ -21,7 +21,7 @@ export const tabList = [
   },
   {
     key: "thegraph",
-    text: "NEAR Aurora",
+    text: "Aurora",
   },
 ];
 
