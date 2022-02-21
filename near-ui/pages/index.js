@@ -190,12 +190,12 @@ export default function Index() {
               </p>
               <h3 className="font-semibold text-3xl">来尝试下发起空投？</h3>
               <p className="text-blueGray-500 text-lg leading-relaxed mt-4 mb-4">
-                任何人都可以用 M2Drops 一键发起空投！
+                任何人都可以用 metadrops 一键发起空投！
               </p>
               <div className="sm:block flex flex-col mt-10">
                 <Link href="/airdrops/apply">
                   <span className="cursor-pointer github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 text-sm shadow hover:shadow-lg">
-                    <span>M2Drops It!</span>
+                    <span>metadrops It!</span>
                   </span>
                 </Link>
               </div>

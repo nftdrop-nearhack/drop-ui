@@ -162,9 +162,9 @@ export default function NftList() {
                   😍
                 </span>
               </p>
-              <h3 className="font-semibold text-3xl">来尝试下铸造 NFT？</h3>
+              <h3 className="font-semibold text-3xl">Try to airdrop your own project,</h3>
               <p className="text-blueGray-500 text-lg leading-relaxed mt-4 mb-4">
-                任何人都可以用 M2Drops 一键铸造 NFT！
+                 Anyone can initiate an airdrop at any time!
               </p>
               <div className="sm:block flex flex-col mt-10">
                 <Link href="/nft/mint">

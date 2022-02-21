@@ -5,26 +5,26 @@ export const tabList = [
   //   },
   {
     key: "ongoing",
-    text: "正在进行",
+    text:"In progress",// "正在进行",
   },
   {
     key: "upcoming",
-    text: "即将开始",
+    text:"Incoming",// "即将开始",
   },
   {
     key: "ended",
-    text: "已结束",
+    text: "Closed",
   },
   {
     key: "participated",
-    text: "我参与的",
+    text: "Mine",
   },
 ];
 
 export const tableHeads = [
   {
     key: "project",
-    text: "空投项目",
+    text: "Airdrop Projects",
   },
   //   {
   //     key: "participatedAddrCount",
@@ -32,18 +32,18 @@ export const tableHeads = [
   //   },
   {
     key: "totalAirdropAddrCount",
-    text: "空投地址总数",
+    text: "Total of airdrop addresses",
   },
   {
     key: "totalAirdropAmount",
-    text: "空投总量",
+    text: "Total airdrop",
   },
   {
     key: "startTime",
-    text: "开始时间",
+    text: "Start Time",
   },
   {
     key: "endTime",
-    text: "结束时间",
+    text: "End Time",
   },
 ];

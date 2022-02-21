@@ -258,11 +258,11 @@ export default function AirdropDetail() {
               </h4>
 
               <p className="text-md text-blueGray-500 font-bold my-4">
-                空投时间:{airdropDetail.airdrop.startTime}~
+                Airdrop Time:{airdropDetail.airdrop.startTime}~
                 {airdropDetail.airdrop.endTime}
               </p>
               <p className="text-md text-blueGray-500 font-bold my-4">
-                空投描述:{airdropDetail.desc}
+                Airdrop Description:{airdropDetail.desc}
               </p>
               {/* <p className="text-md text-blueGray-500 font-bold my-4">
             空投 Token 名称:

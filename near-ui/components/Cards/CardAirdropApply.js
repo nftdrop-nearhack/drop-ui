@@ -301,14 +301,14 @@ export default function CardSettings() {
       <div className="relative flex flex-col min-w-0 break-words w-full mb-6  rounded-lg bg-blueGray-100 border-0">
         <div className="rounded-t  mb-0 px-6 py-6">
           <div className="text-center flex justify-between">
-            <h6 className="text-blueGray-700 text-xl font-bold">发起空投</h6>
+            <h6 className="text-blueGray-700 text-xl font-bold">Launch an airdrop</h6>
           </div>
         </div>
         <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
           <form>
             {/* 空投项目信息 */}
             <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-              空投项目信息
+              Airdrop Projects
             </h6>
             <div className="flex flex-wrap">
               <div className="w-full lg:w-8/12 px-4">
@@ -317,7 +317,7 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    空投活动名称
+                    Airdrop Activity Name
                   </label>
                   <input
                     ref={nameRef}
@@ -335,7 +335,7 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    空投活动图片
+                    Airdrop Activity Image
                   </label>
                   <input
                     ref={imgUrlRef}
@@ -353,7 +353,7 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    空投活动描述
+                   Airdrop Activity Description
                   </label>
                   <textarea
                     ref={descRef}
@@ -371,7 +371,7 @@ export default function CardSettings() {
                   className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                   htmlFor="grid-password"
                 >
-                  空投项目网址
+                  Airdrop Projects Address
                 </label>
                 <input
                   ref={websiteRef}
@@ -387,7 +387,7 @@ export default function CardSettings() {
                   className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                   htmlFor="grid-password"
                 >
-                  空投项目 Twitter
+                  Airdrop Projects Twitter
                 </label>
                 <input
                   ref={twitterRef}
@@ -403,7 +403,7 @@ export default function CardSettings() {
                   className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                   htmlFor="grid-password"
                 >
-                  空投项目 Telegram
+                  Airdrop Projects Telegram
                 </label>
                 <input
                   ref={telegramRef}
@@ -416,7 +416,7 @@ export default function CardSettings() {
 
             {/* 空投地址 */}
             <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-              空投地址条件
+              Airdrop Address rules
             </h6>
             <div className="flex flex-wrap">
               <div className="w-full lg:w-8/12 px-4">
@@ -425,7 +425,8 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    选择持有以下 NFT 的地址，作为空投的目标地址
+                    {/* 选择持有以下 NFT 的地址，作为空投的目标地址 */}
+                    Select the address holding the following NFT as the target address of the airdrop
                   </label>
                   <select
                     ref={nftConRef}
@@ -435,7 +436,7 @@ export default function CardSettings() {
                     {nftDetailList.length > 0 ? (
                       nftDetailList.map((item) => (
                         <option key={item.id} value={item.id}>
-                          {item.name} (已领取/总数: {item.claimedCount} /{" "}
+                          {item.name} (Received/Total: {item.claimedCount} /{" "}
                           {item.nftCount})
                         </option>
                       ))
@@ -452,7 +453,7 @@ export default function CardSettings() {
                     className="bg-blueGray-600 text-white active:bg-blueGray-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                   >
-                    添加
+                    Add
                   </button>
                 </div>
               </div>
@@ -479,7 +480,7 @@ export default function CardSettings() {
                             <div className="w-0 flex-1 flex items-center">
                               <span className="ml-2 flex-1 w-0 truncate">
                                 {target.name}
-                                (已领取/总数: {target.claimedCount}/
+                                (Received/Total: {target.claimedCount}/
                                 {target.nftCount})
                               </span>
                             </div>
@@ -489,7 +490,7 @@ export default function CardSettings() {
                                 className="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                 type="button"
                               >
-                                删除
+                                Delete
                               </button>
                             </div>
                           </li>
@@ -510,7 +511,7 @@ export default function CardSettings() {
             <hr className="mt-6 border-b-1 border-blueGray-300" />
 
             <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-              空投信息
+              Airdrop Information
             </h6>
             <div className="flex flex-wrap">
               <div className="w-full lg:w-12/12 px-4">
@@ -519,7 +520,7 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    空投 Token 合约地址
+                    Airdrop Token Address
                   </label>
                   <input
                     ref={tokenAddrRef}
@@ -572,7 +573,7 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    空投Token 数量
+                    Airdrop Token Amount
                   </label>
                   <input
                     ref={tokenAmountRef}
@@ -592,7 +593,8 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    空投开始时间
+                    {/* 空投开始时间 */}
+                    Airdrop Start Time
                   </label>
                   <input
                     ref={startTimeRef}
@@ -608,7 +610,7 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    空投结束时间
+                    Airdrop End Time
                   </label>
                   <input
                     ref={endTimeRef}
@@ -628,7 +630,7 @@ export default function CardSettings() {
                   className="bg-blueGray-700 text-white active:bg-blueGray-600 font-bold uppercase text-lg px-12 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                   type="button"
                 >
-                  提交
+                  Submit
                 </button>
               </div>
             </div>

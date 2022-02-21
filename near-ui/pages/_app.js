@@ -36,7 +36,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>M2Drops</title>
+          <title>metadrops</title>
         </Head>
         <Web3ReactProvider getLibrary={getLibrary}>
           <Layout>

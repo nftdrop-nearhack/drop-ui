@@ -1,6 +1,6 @@
-# Mars Monkey Drops
+# metadrops
 
-![ Mars Monkey Drops](../logo.png)
+![metadrops](../logo.png)
 
 > This work fork from our Team private project [gitlab repository]
 
