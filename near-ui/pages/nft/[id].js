@@ -185,7 +185,7 @@ export default function NFTDetail({ data }) {
                 <div className="w-full lg:w-6/12 px-4">
                   {/* 领取条件 */}
                   <h4 className="text-xl font-bold text-blueGray-600">
-                    领取条件
+                    Receiving condition
                   </h4>
 
                   <div className="mt-2">
@@ -200,7 +200,7 @@ export default function NFTDetail({ data }) {
                             <div className="w-0 flex-1 flex items-center">
                               <span className="ml-2 flex-1 w-0 truncate">
                                 {_.find(mintConditions, { key: item.key }).text}
-                                ，至少 {item.count} 次
+                                ，At least {item.count} times
                               </span>
                             </div>
                             <div className="ml-4 flex-shrink-0">
@@ -218,8 +218,8 @@ export default function NFTDetail({ data }) {
                                   {claimStatus &&
                                   claimStatus.actions[item.key] &&
                                   claimStatus.actions[item.key].match
-                                    ? "满足"
-                                    : "不满足"}
+                                    ? "satisfy"
+                                    : "not satisfied"}
                                 </span>
                               )}
                             </div>
@@ -233,7 +233,7 @@ export default function NFTDetail({ data }) {
                         >
                           <div className="w-0 flex-1 flex items-center">
                             <span className="ml-2 flex-1 w-0 truncate">
-                              链上资产总额大于 {nftDetail.money} USD
+                              The total amount of on-chain assets is greater than {nftDetail.money} USD
                             </span>
                           </div>
                           <div className="ml-4 flex-shrink-0">
@@ -251,8 +251,8 @@ export default function NFTDetail({ data }) {
                                 {claimStatus &&
                                 claimStatus.money &&
                                 claimStatus.money.match
-                                  ? "满足"
-                                  : "不满足"}
+                                  ? "satisfy"
+                                  : "not satisfied"}
                               </span>
                             )}
                           </div>
@@ -270,7 +270,7 @@ export default function NFTDetail({ data }) {
                           }
                           type="button"
                         >
-                          你已经领取过了
+                          you have already received
                         </button>
                       ) : (
                         <button
@@ -284,8 +284,8 @@ export default function NFTDetail({ data }) {
                           type="button"
                         >
                           {claimStatus && claimStatus.match
-                            ? "领取"
-                            : "没有资格领取"}
+                            ? "Receive"
+                            : "Not eligible to receive"}
                         </button>
                       )}
                     </div>
@@ -295,7 +295,7 @@ export default function NFTDetail({ data }) {
 
                   {/* 关联的空投活动 */}
                   <h4 className="mb-4 text-xl font-bold text-blueGray-600">
-                    关联的空投活动
+                    Associated Airdrop Campaign
                   </h4>
 
                   <AirdropsCardTable />
@@ -321,7 +321,7 @@ export default function NFTDetail({ data }) {
                         </span>
 
                         <span className="mt-2 text-sm font-semibold inline-block py-1 px-2  rounded text-emerald-600 bg-emerald-200 mr-2">
-                          已领取/总数: {nftDetail.claimedCount} /{" "}
+                         Received/Total: {nftDetail.claimedCount} /{" "}
                           {nftDetail.nftCount}
                         </span>
 

@@ -268,7 +268,7 @@ export default function AirdropDetail() {
             空投 Token 名称:
           </p> */}
               <p className="text-md text-blueGray-500 font-bold my-4">
-                空投 Token 合约:
+                Airdrop Token Address:
                 <a
                   href={`https://polygonscan.com/address/${airdropDetail.airdrop.token}`}
                   target="__blank"
@@ -278,13 +278,14 @@ export default function AirdropDetail() {
                 </a>
               </p>
               <p className="text-md text-blueGray-500 font-bold my-4">
-                已领取/空投总量:
+                {/* 已领取/空投总量: */}
+                Total amount received/airdropped:
                 <span className="ml-2 text-sm font-semibold inline-block py-1 px-2  rounded text-emerald-600 bg-emerald-200 mr-2">
                   {airdropDetail.airdrop.tokenAmount}
                 </span>
               </p>
               <p className="text-md text-blueGray-500 font-bold my-4">
-                空投地址数:
+               Number of airdrop addresses:
                 <span className="ml-2 text-sm font-semibold inline-block py-1 px-2  rounded text-emerald-600 bg-emerald-200 mr-2">
                   {airdropDetail.airdrop.tokenClaimableCount}
                 </span>
@@ -297,7 +298,7 @@ export default function AirdropDetail() {
                     className="bg-emerald-500 text-white block mr-1active:bg-emerald-500 font-bold uppercase text-lg px-12 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                   >
-                    领取
+                  Receive
                   </button>
                 </div>
               </div>
@@ -306,10 +307,11 @@ export default function AirdropDetail() {
             </div>
 
             <h4 className="text-lg font-bold text-blueGray-600">
-              空投领取条件
+              Airdrop Receipt Conditions
             </h4>
             <p className="text-sm text-blueGray-500 font-bold my-4">
-              持有以下NFT的地址才可以领取空投
+              {/* 持有以下NFT的地址才可以领取空投 */}
+              Only the addresses holding the following NFTs can receive the airdrop
             </p>
             <div className="flex flex-wrap py-8 mb-12">
               {nftDetailList.map((item) => (
