@@ -1,11 +1,12 @@
-# Mars Monkey Drops
+# MetaDrops
 
-![ Mars Monkey Drops](logo.png)
+![ Meta Drops](logo.png)
 
 > This work fork from our Team private project [gitlab repository]
 
 ## Metamask Network Configuration Usage
 
+> Default Polygon Mainnet
 
 ### Polygon Testnet mumbai
 - name : Polygon Testnet
