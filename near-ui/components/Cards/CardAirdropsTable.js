@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import React from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";

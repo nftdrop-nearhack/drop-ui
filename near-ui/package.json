@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 37217",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 37218",
     "lint": "next lint",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
     "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
