@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-center lg:text-left">
             <div className="w-full lg:w-6/12 px-4">
-              <h4 className="text-xl font-semibold">{"Let's M2Drops!"}</h4>
+              <h4 className="text-xl font-semibold">{"Let's metadrops!"}</h4>
               <h5 className="text-sm mt-0 mb-2 text-blueGray-600">
                 Decentralized airdrop platform based on on-chain data
               </h5>

@@ -105,14 +105,14 @@ export default function CardNFTMint() {
       <div className="relative flex flex-col min-w-0 break-words w-full mb-6  rounded-lg bg-blueGray-100 border-0">
         <div className="rounded-t  mb-0 px-6 py-6">
           <div className="text-center flex justify-between">
-            <h6 className="text-blueGray-700 text-xl font-bold">铸造 NFT</h6>
+            <h6 className="text-blueGray-700 text-xl font-bold">Minting NFT</h6>
           </div>
         </div>
         <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
           <form>
             {/* NFT 信息 */}
             <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-              NFT 信息
+              NFT Information
             </h6>
             <div className="flex flex-wrap">
               <div className="w-full lg:w-8/12 px-4">
@@ -121,7 +121,7 @@ export default function CardNFTMint() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    NFT 名称
+                    NFT Name
                   </label>
                   <input
                     ref={nftName}
@@ -139,7 +139,7 @@ export default function CardNFTMint() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    NFT 图片
+                    NFT Image
                   </label>
                   <input
                     ref={nftImgUrl}
@@ -157,7 +157,7 @@ export default function CardNFTMint() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    NFT 描述
+                    NFT Description
                   </label>
                   <textarea
                     ref={nftDesc}
@@ -175,7 +175,8 @@ export default function CardNFTMint() {
                   className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                   htmlFor="grid-password"
                 >
-                  NFT 铸造数量
+                  {/* NFT 铸造数量 */}
+                  Number of NFTs minted
                 </label>
                 <input
                   ref={nftCount}
@@ -189,7 +190,8 @@ export default function CardNFTMint() {
 
             {/* 空投地址 */}
             <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-              NFT申领条件
+              {/* NFT申领条件 */}
+              NFT application conditions
             </h6>
             <div className="flex flex-wrap">
               <div className="w-full px-4">
@@ -203,7 +205,8 @@ export default function CardNFTMint() {
                       type="checkbox"
                       className="appearance-none checked:bg-blue-600 checked:border-transparent mr-2"
                     ></input>
-                    选择参与过的链上活动
+                    {/* 选择参与过的链上活动 */}
+                    Select on-chain activities you have participated in
                   </label>
 
                   <div className="flex items-center">
@@ -227,7 +230,7 @@ export default function CardNFTMint() {
                         placeholder="至少交易次数"
                         defaultValue="1"
                       />
-                      <span className="px-2">次</span>
+                      <span className="px-2">times</span>
                     </div>
 
                     <div className="md:w-2/12 px-4">
@@ -236,7 +239,7 @@ export default function CardNFTMint() {
                         className="bg-blueGray-600 text-white active:bg-blueGray-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="button"
                       >
-                        添加
+                       Add
                       </button>
                     </div>
                   </div>
@@ -256,7 +259,7 @@ export default function CardNFTMint() {
                         <div className="w-0 flex-1 flex items-center">
                           <span className="ml-2 flex-1 w-0 truncate">
                             {_.find(mintConditions, { key: item.key }).text}
-                            ，至少 {item.count} 次
+                            ，At least {item.count} times
                           </span>
                         </div>
                         <div className="ml-4 flex-shrink-0">
@@ -265,7 +268,7 @@ export default function CardNFTMint() {
                             className="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                             type="button"
                           >
-                            删除
+                            Delete
                           </button>
                         </div>
                       </li>
@@ -288,7 +291,7 @@ export default function CardNFTMint() {
                       type="checkbox"
                       className="appearance-none checked:bg-blue-600 checked:border-transparent mr-2"
                     ></input>
-                    链上资产
+                    On-chain assets
                   </label>
                 </div>
               </div>
@@ -300,14 +303,14 @@ export default function CardNFTMint() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    地址上的资产总额
+                    The total amount of assets on the address
                   </label>
                   <div className="flex  items-center">
                     <input
                       ref={nftMoney}
                       type="text"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="主流资产总额"
+                      placeholder="Total Mainstream Assets"
                     />
 
                     <span className="px-2">USD</span>
@@ -325,7 +328,7 @@ export default function CardNFTMint() {
                   className="bg-blueGray-700 text-white active:bg-blueGray-600 font-bold uppercase text-lg px-12 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                   type="button"
                 >
-                  铸造
+                  Mint
                 </button>
               </div>
             </div>
