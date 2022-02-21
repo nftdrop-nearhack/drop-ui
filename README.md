@@ -1,5 +1,5 @@
-# NFT DROP UI
+# Mars Monkey Drops
 
-> This work fork from our Team private project [gitlab REPO]
+![ Mars Monkey Drops](logo.png)
 
-## 
+> This work fork from our Team private project [gitlab repository]
