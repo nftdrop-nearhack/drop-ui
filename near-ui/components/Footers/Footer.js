@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="w-full lg:w-6/12 px-4">
               <div className="flex flex-wrap items-top mb-6">
                 <div className="ml-auto">
-                  <a
+                  {/* <a
                     href="https://twitter.com/lamborghini171"
                     target="__blank"
                   >
@@ -30,10 +30,10 @@ export default function Footer() {
                     >
                       <i className="fab fa-twitter"></i>
                     </button>
-                  </a>
+                  </a> */}
 
                   <a
-                    href="https://github.com/nftdrop-nearhack"
+                    href="https://github.com/nftdrop-nearhack/drop-ui"
                     target="__blank"
                   >
                     <button
