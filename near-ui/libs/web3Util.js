@@ -35,6 +35,17 @@ export function formatEtherscanLink(type, data) {
       default:
         return;
     }
+  }else if(chainId === 1313161555){
+    switch (type) {
+      case "Account": {
+        return `https://testnet.aurorascan.dev/address/${address}`;
+      }
+      case "Transaction": {
+        return `https://testnet.aurorascan.dev/tx/${hash}`;
+      }
+      default:
+        return;
+    }
   } else {
     switch (type) {
       case "Account": {
